@@ -27,9 +27,9 @@ const ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
 const toneAnalyzer = new ToneAnalyzerV3({
 	version: '2017-09-21',
-	username: '27f45d9f-a17b-4481-9dd5-e529307fbb84',
-	password: 'eSuqJ4mjwsdM',
-	url: 'https://gateway.watsonplatform.net/tone-analyzer/api'
+	username: '',
+	password: '',
+	url: ''
 });
 
 var text_tone = {
@@ -40,7 +40,7 @@ var text_tone = {
 var curr_docs = {};
 var Cloudant = require('@cloudant/cloudant');
 
-cloudant = Cloudant("https://0ec7cd4c-48d4-42e1-9f09-f63e1622f78e-bluemix:630e8f71457423bf586a43c1fc65165708db339e76a1937a955508a1a3459fa4@0ec7cd4c-48d4-42e1-9f09-f63e1622f78e-bluemix.cloudantnosqldb.appdomain.cloud");
+cloudant = Cloudant("");
 mydb = cloudant.db.use('test');
  
 mydb.list({ include_docs: true }, function(err, body) {
