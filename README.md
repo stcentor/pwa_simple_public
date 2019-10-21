@@ -1,6 +1,6 @@
 # pwa_simple_public
 
-This repository contains the end goal of the making a PWA workshop.  This code is run locally using "npm start".  It can be viewed in a browser on localhost:8080.  
+This repository contains the end goal of the making a PWA workshop.  This code is run locally using "npm start".  It can be viewed in a browser on localhost:8080.  When running locally the if statement at the beginning of the app.js file will need to be commented out.  This code redirects HTTP requests to HTTPS to ensure the app is always delivered over a secure connection.  You will want this when deploying live but it needs to be removed (commented out) to run and test locally.
 
 This Progressive Web Applciation registers a service worker in order to be used offline and contains a manifest file that defines certian attributes of the application.  
 
